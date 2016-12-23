@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="shortcut icon" href="images/search.png" />
+<title>BOX</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+	<div class="container">
+	<h2>Box Search</h2>
+	<form style='align:center'>
+		<div class="group">      
+			<input type="text" required id="Search">
+			<span class="highlight"></span>
+			<label>Serial Name</label>
+		</div>
+		<div class="group">      
+			<input type="text" required id="serch1">
+			<span class="highlight"></span>
+			<label>Season No</label>
+		</div>
+		<a href= " http://s1.bia2m.biz/Series/" onclick="document.location.href = $(this).attr('href')+$('#Search').val() + '/s' + $('#serch1').val(); return false;">
+		<button class="btn waves-effect waves-light" type="submit" name="action">Submit</button></a>
+	</form>
+	</div>
+	<footer style="text-align:center;color:white;margin-top:135px"> AMIT &nbsp; |&nbsp; ANIRUDH </footer>
+	<footer style="text-align:center;color:white;"> Ba8Y &nbsp;&nbsp; |&nbsp; anigupta8 </footer>
+</body>  
+</html>
